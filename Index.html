@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VermKompass</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-box">VK</div>
+
+            <div class="logo-text">
+                <strong>VermKompass</strong>
+                <span>Vermessungstechniker</span>
+            </div>
+        </div>
+
+        <nav class="navigation">
+
+            <a href="#start" class="nav-item active">
+                <span class="nav-icon">⌂</span>
+                <span>Startseite</span>
+            </a>
+
+            <a href="#berufsschule" class="nav-item">
+                <span class="nav-icon">▣</span>
+                <span>Berufsschule</span>
+            </a>
+
+            <a href="#programme" class="nav-item">
+                <span class="nav-icon">▤</span>
+                <span>Programme</span>
+            </a>
+
+            <a href="#arbeitsablaeufe" class="nav-item">
+                <span class="nav-icon">↻</span>
+                <span>Arbeitsabläufe</span>
+            </a>
+
+            <a href="#begriffe" class="nav-item">
+                <span class="nav-icon">Aa</span>
+                <span>Begriffe</span>
+            </a>
+
+            <a href="#checklisten" class="nav-item">
+                <span class="nav-icon">☷</span>
+                <span>Checklisten</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <span>VERMKOMPASS 2.0</span>
+        </div>
+
+    </aside>
+
+
+    <!-- HAUPTBEREICH -->
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <div class="topbar-left">
+                <span>VERMESSUNG</span>
+                <span class="separator">/</span>
+                <span>LERNEN &amp; PRAXIS</span>
+            </div>
+
+            <button id="themeToggle" class="theme-button">
+                ☼
+            </button>
+
+        </header>
+
+
+        <!-- HERO -->
+        <section id="start" class="hero">
+
+            <div class="technical-grid"></div>
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    DEIN DIGITALER KOMPASS
+                </div>
+
+                <h1>
+                    Verm<span>Kompass</span>
+                </h1>
+
+                <p class="hero-text">
+                    Wissen, Programme und Arbeitsabläufe für die
+                    Ausbildung zum Vermessungstechniker –
+                    übersichtlich an einem Ort.
+                </p>
+
+                <div class="coordinates">
+                    X 5 662 481.23
+                    &nbsp;&nbsp;
+                    Y 5 689 214.87
+                    &nbsp;&nbsp;
+                    H 182.64
+                </div>
+
+            </div>
+
+            <div class="target">
+
+                <div class="target-horizontal"></div>
+                <div class="target-vertical"></div>
+                <div class="target-circle"></div>
+                <div class="target-point"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BEREICHE -->
+        <section class="overview">
+
+            <div class="section-heading">
+
+                <div>
+                    <div class="eyebrow">
+                        ÜBERSICHT
+                    </div>
+
+                    <h2>
+                        Was möchtest du machen?
+                    </h2>
+                </div>
+
+                <div class="search-box">
+
+                    <span class="search-icon">⌕</span>
+
+                    <input
+                        id="search"
+                        type="search"
+                        placeholder="Bereich suchen ..."
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- KARTEN -->
+            <div class="cards" id="areas">
+
+
+                <!-- BERUFSSCHULE -->
+                <a
+                    href="#berufsschule"
+                    class="card"
+                    data-search="berufsschule vermessungskunde instrumentenkunde lagemessungen höhenmessungen koordinatenbestimmung rechenbeispiele übungsaufgaben"
+                >
+
+                    <div class="card-icon">
+                        ▣
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>
+                            Berufsschule
+                        </h3>
+
+                        <p>
+                            Theorie, Rechenverfahren,
+                            Rechenbeispiele und Übungsaufgaben.
+                        </p>
+
+                    </div>
+
+                    <span class="card-arrow">
+                        ↗
+                    </span>
+
+                </a>
+
+
+                <!-- PROGRAMME -->
+                <a
+                    href="#programme"
+                    class="card"
+                    data-search="programme vermcad carlo dmscaribu geograph geografie geo graf"
+                >
+
+                    <div class="card-icon">
+                        ▤
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>
+                            Programme
+                        </h3>
+
+                        <p>
+                            Praktische Anleitungen für
+                            VermCAD, CARLO, DMSCaribu und GeoGraf.
+                        </p>
+
+                    </div>
+
+                    <span class="card-arrow">
+                        ↗
+                    </span>
+
+                </a>
+
+
+                <!-- ARBEITSABLÄUFE -->
+                <a
+                    href="#arbeitsablaeufe"
+                    class="card"
+                    data-search="arbeitsabläufe katasterberichtigung lageplan workflow"
+                >
+
+                    <div class="card-icon">
+                        ↻
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>
+                            Arbeitsabläufe
+                        </h3>
+
+                        <p>
+                            Komplette Abläufe von der Aufgabe
+                            bis zur fertigen Dokumentation.
+                        </p>
+
+                    </div>
+
+                    <span class="card-arrow">
+                        ↗
+                    </span>
+
+                </a>
+
+
+                <!-- BEGRIFFE -->
+                <a
+                    href="#begriffe"
+                    class="card"
+                    data-search="begriffe glossar fachbegriffe definitionen"
+                >
+
+                    <div class="card-icon">
+                        Aa
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>
+                            Begriffe
+                        </h3>
+
+                        <p>
+                            Fachbegriffe schnell nachschlagen
+                            und Zusammenhänge verstehen.
+                        </p>
+
+                    </div>
+
+                    <span class="card-arrow">
+                        ↗
+                    </span>
+
+                </a>
+
+
+                <!-- CHECKLISTEN -->
+                <a
+                    href="#checklisten"
+                    class="card"
+                    data-search="checklisten kontrolle arbeitsschritte prüfen"
+                >
+
+                    <div class="card-icon">
+                        ☷
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>
+                            Checklisten
+                        </h3>
+
+                        <p>
+                            Übersichten zum Abhaken für
+                            wichtige Arbeitsschritte.
+                        </p>
+
+                    </div>
+
+                    <span class="card-arrow">
+                        ↗
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- INFO -->
+        <section class="info-section">
+
+            <div class="info-line"></div>
+
+            <p>
+                VermKompass befindet sich im Aufbau.
+            </p>
+
+            <span>
+                Die Inhalte werden Schritt für Schritt ergänzt.
+            </span>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            <span>
+                VermKompass · neue technische Basis
+            </span>
+
+            <span>
+                Vermessungstechniker
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
